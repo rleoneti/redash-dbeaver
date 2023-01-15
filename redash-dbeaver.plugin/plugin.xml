@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<plugin>
+
+    <extension point="org.jkiss.dbeaver.generic.meta">
+        <meta id="redash" class="org.leoneti.dbeaver.redash.model.RedashMetaModel" driverClass="org.redash.JDBC" dialect="redash"/>
+    </extension>
+
+    <extension point="org.jkiss.dbeaver.dataSourceProvider">
+        <datasource
+                class="org.jkiss.dbeaver.ext.generic.GenericDataSourceProvider"
+                description="Redash"
+                id="redash"
+                parent="generic"
+                label="Redash"
+                icon="icons/redash_icon.png"
+                dialect="redash">
+            <drivers managable="true">
+                <driver
+                    id="redashjdbc"
+                    label="Redash"
+                    icon="icons/redash_icon.png"
+                    iconBig="icons/redash_icon_big.png"
+                    category="Redash"
+                    class="org.redash.jdbc.RedashDriver"
+                    sampleURL="jdbc:redash:{host}[@{database}]"
+                    embedded="false"
+                    anonymous="false"
+                    description="JDBC driver for Redash"
+                    supportedConfigurationTypes="MANUAL,URL"
+                    supportsDistributedMode="false"
+                    webURL="http://redashjdbc.sourceforge.net/"
+                    propertiesURL="http://redashjdbc.sourceforge.net/doc.html"
+                    categories="sql,bigdata">
+
+                    <parameter name="supports-select-count" value="false"/>
+                    <parameter name="supports-stored-code" value="false"/>
+                    <parameter name="supports-truncate" value="false"/>
+                    <parameter name="supports-views" value="false"/>
+                    <parameter name="supports-indexes" value="false"/>
+                    <parameter name="supports-references" value="false"/>
+                    <parameter name="read-only-data" value="true"/>
+                    <parameter name="read-only-meta-data" value="true"/>
+                    <parameter name="supports-embedded-database-creation" value="false"/>
+                    <parameter name="supports-table-constraints" value="false"/>
+                    
+                    <property name="ssl" value="true"/>
+                    <property name="queryName" value="DBeaver Query"/>
+                    <parameter name="driver-properties" value="ssl,queryName,pageSize,userAgent"/>
+
+                    <file type="jar" path="maven:/org.leoneti:redash-jdbc:RELEASE[1.0.0]" bundle="!drivers.redashjdbc"/>
+                    <file type="jar" path="drivers/redashjdbc" bundle="drivers.redashjdbc"/>
+                    
+                    <file type="license" path="LICENSE.txt" bundle="drivers.redashjdbc"/>
+                </driver>
+            </drivers>
+        </datasource>
+    </extension>
+
+    <extension point="org.jkiss.dbeaver.dataSourceView">
+        <view
+                id="org.leoneti.dbeaver.redash.dataSourceWizardView"
+                class="org.leoneti.dbeaver.redash.ui.views.RedashConnectionPage"
+                targetID="org.jkiss.dbeaver.ext.ui.newConnectionWizard"
+                dataSource="redash"
+                label="%redash.dialog.connection.header"
+                icon="platform:/plugin/org.leoneti.dbeaver.redash/icons/redash_icon.png">
+        </view>
+        <view
+                id="org.leoneti.dbeaver.redash.dataSourceEditorView"
+                class="org.leoneti.dbeaver.redash.ui.views.RedashConnectionPage"
+                targetID="org.jkiss.dbeaver.ext.ui.editConnectionDialog"
+                dataSource="redash"
+                label="%redash.dialog.connection.header"
+                icon="platform:/plugin/org.leoneti.dbeaver.redash/icons/redash_icon.png">
+        </view>
+    </extension>
+
+</plugin>

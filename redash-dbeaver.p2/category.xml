@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="redash-dbeaver.feature_1.0.0.qualifier.jar" id="redash-dbeaver.feature" version="1.0.0.qualifier">
+      <category name="redash-dbeaver.category"/>
+   </feature>
+   <feature url="redash-dbeaver.feature.source_1.0.0.qualifier.jar" id="redash-dbeaver.feature.source" version="1.0.0.qualifier">
+      <category name="redash-dbeaver.category"/>
+   </feature>
+   <category-def name="redash-dbeaver.category" label="Connector">
+      <description>
+         Redash DBeaver Connector
+      </description>
+   </category-def>
+</site>
