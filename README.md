@@ -3,7 +3,7 @@ Redash connector for DBeaver
 
 ## Install Steps
 1. Download Release Zip file and unpack to new folder
-2. Open DBeaver an go Help -> Install New Software
+2. Open DBeaver and go: Help -> Install New Software
 3. Point to unpacked folder, like `file:/<unpacked_folder>`
 4. Install and DONE
 
