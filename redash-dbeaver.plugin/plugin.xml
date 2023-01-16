@@ -36,7 +36,7 @@
                     icon="icons/redash_icon.png"
                     iconBig="icons/redash_icon_big.png"
                     category="Redash"
-                    class="org.redash.jdbc.RedashDriver"
+                    class="redash.jdbc.RedashDriver"
                     sampleURL="jdbc:redash:{host}[@{database}]"
                     embedded="false"
                     anonymous="false"
