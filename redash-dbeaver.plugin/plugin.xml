@@ -62,7 +62,7 @@
                     <property name="queryName" value="DBeaver Query"/>
                     <parameter name="driver-properties" value="ssl,queryName,pageSize,userAgent"/>
 
-                    <file type="jar" path="https://github.com/rleoneti/redash-jdbc/releases/download/1.0.0/redash-jdbc-FULL-1.0.1.jar" bundle="!drivers.redashjdbc"/>
+                    <file type="jar" path="https://github.com/rleoneti/redash-jdbc/releases/download/1.0.1/redash-jdbc-FULL-1.0.1.jar" bundle="!drivers.redashjdbc"/>
                     <file type="jar" path="maven:/org.leoneti:redash-jdbc-FULL:RELEASE[1.0.1]" bundle="drivers.redashjdbc"/>
                     
                     <file type="license" path="LICENSE.txt" bundle="drivers.redashjdbc"/>
