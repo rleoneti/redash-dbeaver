@@ -27,7 +27,7 @@ import org.osgi.framework.BundleContext;
 public class Activator extends AbstractUIPlugin {
 
     // The plug-in ID
-    private static final String PLUGIN_ID = "org.leoneti.dbeaver.redash.ui";
+    private static final String PLUGIN_ID = "redash-dbeaver.plugin";
 
     @Override
     public void start(BundleContext context) throws Exception {

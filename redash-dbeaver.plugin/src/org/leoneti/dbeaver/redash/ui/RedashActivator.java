@@ -26,7 +26,7 @@ import org.osgi.framework.BundleContext;
 public class RedashActivator extends AbstractUIPlugin {
 
     // The plug-in ID
-    public static final String PLUGIN_ID = "org.leoneti.dbeaver.redash";
+    public static final String PLUGIN_ID = "redash-dbeaver.plugin";
 
     // The shared instance
     private static RedashActivator plugin;
