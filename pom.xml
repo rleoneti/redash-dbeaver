@@ -20,64 +20,11 @@
     <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
-        <tycho-version>3.0.1</tycho-version>
+        <tycho-version>2.7.4</tycho-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <repository.id>eclipse-2022-12</repository.id>
-        <repository.url>http://download.eclipse.org/releases/2022-12/</repository.url>
+        <repository.url>https://download.eclipse.org/releases/2022-12/</repository.url>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jkiss.dbeaver</groupId>
-            <artifactId>org.jkiss.dbeaver.model</artifactId>
-            <version>1.0.185.202212251901</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.model_1.0.185.202212251901.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.jkiss.dbeaver</groupId>
-            <artifactId>org.jkiss.dbeaver.ui</artifactId>
-            <version>5.1.111.202212251901</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.ui_5.1.111.202212251901.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.jkiss.dbeaver</groupId>
-            <artifactId>org.jkiss.dbeaver.ui.editors.connection</artifactId>
-            <version>1.0.87.202212251901</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.ui.editors.connection_1.0.87.202212251901.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.jkiss.dbeaver</groupId>
-            <artifactId>org.jkiss.utils</artifactId>
-            <version>2.1.179.202212251901</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../lib/org.jkiss.utils_2.1.179.202212251901.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.jkiss.dbeaver</groupId>
-            <artifactId>org.jkiss.dbeaver.ext.generic</artifactId>
-            <version>2.3.183-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.ui.editors.connection_1.0.87.202212251901.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-jexl</artifactId>
-            <version>2.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.jsqlparser</groupId>
-            <artifactId>jsqlparser</artifactId>
-            <version>4.5</version>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>

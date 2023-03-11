@@ -22,4 +22,57 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>redash-dbeaver.plugin</artifactId>
     <packaging>eclipse-plugin</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jkiss.dbeaver</groupId>
+            <artifactId>org.jkiss.dbeaver.model</artifactId>
+            <version>1.0.151.202108020335</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.model_1.0.151.202108020335.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.jkiss.dbeaver</groupId>
+            <artifactId>org.jkiss.dbeaver.ui</artifactId>
+            <version>5.1.77.202108020335</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.ui_5.1.77.202108020335.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.jkiss.dbeaver</groupId>
+            <artifactId>org.jkiss.dbeaver.ui.editors.connection</artifactId>
+            <version>1.0.53.202108020335</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.ui.editors.connection_1.0.53.202108020335.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.jkiss.dbeaver</groupId>
+            <artifactId>org.jkiss.utils</artifactId>
+            <version>2.1.145.202108020335</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../lib/org.jkiss.utils_2.1.145.202108020335.jar</systemPath>
+        </dependency>
+        <!--dependency>
+            <groupId>org.jkiss.dbeaver</groupId>
+            <artifactId>org.jkiss.dbeaver.ext.generic</artifactId>
+            <version>2.3.148.202108020335</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../lib/org.jkiss.dbeaver.ext.generic_2.3.148.202108020335.jar</systemPath>
+        </dependency-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-jexl</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.jsqlparser</groupId>
+            <artifactId>jsqlparser</artifactId>
+            <version>4.5</version>
+        </dependency>
+    </dependencies>
 </project>
