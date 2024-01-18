@@ -14,10 +14,10 @@
 *****************************************************************************************/
 -->
 <site>
-   <feature url="redash-dbeaver.feature_1.0.1.qualifier.jar" id="redash-dbeaver.feature" version="1.0.1.qualifier">
+   <feature url="redash-dbeaver.feature_1.0.2.qualifier.jar" id="redash-dbeaver.feature" version="1.0.2.qualifier">
       <category name="redash-dbeaver.category"/>
    </feature>
-   <feature url="redash-dbeaver.feature.source_1.0.1.qualifier.jar" id="redash-dbeaver.feature.source" version="1.0.1.qualifier">
+   <feature url="redash-dbeaver.feature.source_1.0.2.qualifier.jar" id="redash-dbeaver.feature.source" version="1.0.2.qualifier">
       <category name="redash-dbeaver.category"/>
    </feature>
    <category-def name="redash-dbeaver.category" label="Connector">

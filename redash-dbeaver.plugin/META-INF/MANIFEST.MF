@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Redash DBeaver Connector
 Bundle-Vendor: redash-dbeaver.plugin
 Bundle-SymbolicName: redash-dbeaver.plugin;singleton:=true
-Bundle-Version: 1.0.1.qualifier
+Bundle-Version: 1.0.2.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: OSGI-INF/l10n/bundle
@@ -13,6 +13,5 @@ Require-Bundle: org.eclipse.ui,
  org.jkiss.dbeaver.ui,
  org.jkiss.dbeaver.ui.editors.connection,
  org.jkiss.dbeaver.ext.generic;visibility:=reexport,
- org.jkiss.utils,
- org.slf4j.api;visibility:=reexport
+ org.jkiss.utils
 

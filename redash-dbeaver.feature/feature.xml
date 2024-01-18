@@ -16,7 +16,7 @@
 <feature
       id="redash-dbeaver.feature"
       label="Redash DBeaver Connector"
-      version="1.0.1.qualifier">
+      version="1.0.2.qualifier">
 
    <description url="https://github.com/rleoneti/redash-dbeaver">
       Redash DBeaver connector
